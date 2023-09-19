@@ -108,7 +108,8 @@ plt.grid(True)
 plt.tight_layout()
 plt.show()
 
-#
+################## USE FOR LAGGED CORRELATION #####################
+
 # # Step 7: Create plots and calculate correlations
 # for metric in ['BTC_Price_Change_Lagged', 'BTC_Volume_Lagged'] + sentiment_metrics + reputation_sentiment_metrics:
 #     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 12), sharex=True)
