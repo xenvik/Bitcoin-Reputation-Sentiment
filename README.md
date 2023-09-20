@@ -83,6 +83,7 @@ Y(l,d) as the correlation between the target price difference, volume function a
 * We see that the major impact of social media metrics (cumulative) are more correlated to BTC Trade Volume through SACI model reaching as high as 0.86 for reputation metrics
 * Though the impact of Reputation model is negligible in normal Pearson Correlations and in SACI (to order of 1-2%) the final results are been fine tuned and bettered by Reputation Model which is a positive sign for the research and further development.
 * We have seen the most important metrics are Sentiment metrics (sen, pos, neg and con) followed by Counts daily (frequency and words) and cumulative CBS metrics
+* We have been already working on lag of -12 Hours, -8 hours and -4 hours to check whether the Pearson correlations and SACI scores are resulting better for lagged data (as to establish the impact of social media on BTC Price and Volume relative to time.
 
 # Future Scope
 * Reputation Model should further be tested on different dataset and more metrics of social media user profile to fine tune Reputation Scoring Model.
