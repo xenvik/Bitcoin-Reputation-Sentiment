@@ -48,10 +48,10 @@ All the metrics has been aggregated day wise to have daily results and predictio
 
 ### Following are the Results from Pearson Correlation Analysis 
 * Pearson Correlations for Metrics and Reputation Metrics without lag
-![Latest_wo_lag](https://github.com/xenvik/Bitcoin-Reputation-Sentiment/assets/55597813/c12006bf-447e-4aa2-99c4-092406233af1)
+![PC_unlagged](https://github.com/xenvik/Bitcoin-Reputation-Sentiment/assets/55597813/19ff7aa4-f921-4277-a95d-695a7608b05a)
 
 * Pearson Correlations for Metrics and Reputation Metrics with lag
-![Latest_lagged](https://github.com/xenvik/Bitcoin-Reputation-Sentiment/assets/55597813/6b883e52-fae7-4c98-a77a-9adb78fee6f7)
+![PC_lagged](https://github.com/xenvik/Bitcoin-Reputation-Sentiment/assets/55597813/320c588c-54f6-47a5-b0ab-5473b672f438)
 
 #### As we see the results have fine PC scores but not any major impact can be withdrawn from it. So, we further study to the process of finding what we called synthetic additive cause indicator (SACI) relying on the whole scope of source metrics being treated as a hypothetical causes. The probabilistic logic treats addition as logical disjunction and multiplication as logical conjunction. In this work we were exploring only the disjunctive version of it, so the assembly of the integrative SACI was involving addition of the perspective causes in order to maximize the correlation with the effect at a particular target shift/lag. See the discussion on the SACI performance presented in the following section.
 
@@ -65,23 +65,25 @@ Y(l,d) as the correlation between the target price difference, volume function a
 * Figure 1: Reputation Weights R(c) (scores) of Top 50 channels for illustration
 ![reputation](https://github.com/xenvik/Bitcoin-Reputation-Sentiment/assets/55597813/b4a75f51-9ea5-44d7-9661-863f10417e4f)
 
-* Figure 2: SACI for Price Change PC including sen, sen lagged, pos, pos lagged, neg, neg lagged, con, con lagged, Counts_Daily (wordcnt+itemcnt), Counts_lagged, CBS (cognitive behavioral schemata), CBS lagged, CBS+sen, CBS+sen lagged, CBS+sen+Counts_Daily, CBS+sen+Counts_Daily lagged
-![SACI_Price_Change](https://github.com/xenvik/Bitcoin-Reputation-Sentiment/assets/55597813/756a256a-4b0d-4f7c-91d6-bda39f257c6d)
+* Figure 2: SACI for Price Change PC including sen (total sentiment score), sen lagged, pos (positive sentiment score), pos lagged, neg (negative sentiment score), neg lagged, con (contradictive sentiment score), con lagged, Counts_Daily (wordcnt+itemcnt), Counts_lagged, CBS (cognitive behavioral schemata), CBS lagged, CBS+sen, CBS+sen lagged, CBS+sen+Counts_Daily, CBS+sen+Counts_Daily lagged
+![PC_Price_Change](https://github.com/xenvik/Bitcoin-Reputation-Sentiment/assets/55597813/50c40482-9655-423c-b298-48e8118ee50b)
+
 
 * Figure 3: SACI for Volume PC including sen, sen lagged, pos, pos lagged, neg, neg lagged, con, con lagged, Counts_Daily (wordcnt+itemcnt), Counts_lagged, CBS (cognitive behavioral schemata), CBS lagged, CBS+sen, CBS+sen lagged, CBS+sen+Counts_Daily, CBS+sen+Counts_Daily lagged
-![SACI_Volume](https://github.com/xenvik/Bitcoin-Reputation-Sentiment/assets/55597813/256c6825-a939-41ba-b077-493522b533c1)
+![PC_Volume](https://github.com/xenvik/Bitcoin-Reputation-Sentiment/assets/55597813/5b3f0ff3-1356-4c22-b212-68b187c79a10)
+
 
 ### Results
 * Reputation Scoring have fine tuned the Correlation results than the normal metrics. We have seen positive results of application of Reputation System on the Metrics for Price Predictions.
 * Results show that the correlation between without lag data is higher than the lagged BTC Price change and Volume.
 * Best correlation are shown in metrics namely sen, pos, neg (inverse relation of sentiments), con, wordcnt, itemcnt (all > 0.1 PC) on Volume of BTC
 * The above metrics have seen improved correlations with reputation metrics on Volume BTC repsectively as Reputation_sen, Reputation_pos, Reputation_neg, Reputation_con, Reputation_wordcnt and Reputation_itemcnt. 
-* Study SACI we have found the final additive PC for Volume vs metrics and reputation metrics have shown some impactful scores (highest been > 0.85)
+* Study SACI we have found the final additive PC for Volume vs metrics and reputation metrics have shown some impactful scores (highest been > 1.0)
 * SACI shows the cummulative effect of CBS+sen+Counts_Daily are the best indicator of impact of social media on prediction of BTC Trade Volume
 
 # Conclusion
-* We see that the major impact of social media metrics (cumulative) are more correlated to BTC Trade Volume through SACI model reaching as high as 0.86 for reputation metrics
-* Though the impact of Reputation model is negligible in normal Pearson Correlations and in SACI (to order of 1-2%) the final results are been fine tuned and bettered by Reputation Model which is a positive sign for the research and further development.
+* We see that the major impact of social media metrics (cumulative) are more correlated to BTC Trade Volume through SACI model reaching as high as 1.06 for reputation metrics
+* Though the impact of Reputation model is negligible in normal Pearson Correlations and in SACI (to order of 1-3%) the final results are been fine tuned and bettered by Reputation Model which is a positive sign for the research and further development.
 * We have seen the most important metrics are Sentiment metrics (sen, pos, neg and con) followed by Counts daily (frequency and words) and cumulative CBS metrics
 * We have been already working on lag of -12 Hours, -8 hours and -4 hours to check whether the Pearson correlations and SACI scores are resulting better for lagged data (as to establish the impact of social media on BTC Price and Volume relative to time.
 
