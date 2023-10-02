@@ -32,7 +32,7 @@ where Vijt here is an implicit rating (positive) as the number of mentions by ea
 ## Implementing Reputation scores with Sentiment and CBS metrics
 
 For Reputation metrics scoring all the 21 metrics including CBS, sentiment metrics [sen, pos, neg, con] with word count and item count for each user tweet are calculated using
-####        [ Reputation_'metric' = 'metric' * (1 + Aggregated Reputation Score)]
+####        [ Reputation_'metric' = 'metric' *  Aggregated Reputation Score]
 
 The dataset has been been aggregated day wise, after all the channels has been mapped with their respective reputation score. Alonwith that we have also agregated BTC-USD data day wise to correlate the price and volume trend with Reputation Metrics between June 2022 to December 2022.
 
